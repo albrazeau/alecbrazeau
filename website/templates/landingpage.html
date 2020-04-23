@@ -18,7 +18,6 @@
             position: fixed;
             top: 45%;
             left: 50%;
-            /* bring your own prefixes */
             transform: translate(-50%, -45%);
         }
         .landing-title-text {
@@ -61,6 +60,34 @@
             text-decoration: none;
             padding: 16px 32px;
         }
+        .footer {
+            background: black;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            margin: 0px auto;
+            text-align: center;
+            color: white;
+            height: 40px;
+            align-items: center;
+        }
+        .footer ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .footer li {
+            padding: 4px;
+        }
+        .footer li a {
+            margin: 50%;
+        }
+        .footer a img {
+            height: 32px;
+            width: auto;
+        } 
     </style>
 </head>
 <body>
@@ -73,6 +100,22 @@
             <li><a href="/aboutme">About Me</a></li>
             <li><a href="/resume">Resume</a></li>
         </ul>
+    </div>
+    <div class="footer">
+        <div class="social">
+            <ul>
+                <li>
+                    <a href="https://github.com/albrazeau" target="_blank">
+                        <img src={% static 'GitHub-Mark-64px.png' %} alt="GitHub">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/alecbrazeau" target="_blank">
+                        <img src={% static 'LI-In-Bug.png' %} alt="LinkedIn">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
