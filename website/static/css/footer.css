@@ -1,0 +1,120 @@
+.row.footer {
+    flex-grow: 1;
+    flex-basis: fit-content;
+    background: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-social-icons {
+    width: fit-content;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.social-icon {
+    color: white;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    background-color: #322f30;
+
+    padding: 0px;
+    border-radius: 3px;
+}
+
+#icon {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border-radius: 3px;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+}
+
+.fa-instagram:hover {
+    color: #fff;
+    vertical-align: middle;
+    background-color: #d6249f;
+    background: radial-gradient(circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%);
+}
+
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+
+.fa-youtube:hover {
+    color: #FF0000;
+    background-color: black;
+}
+
+.fa-github:hover {
+    color: #6e5494;
+    background-color: black;
+}
+
+.fa-apple:hover {
+    background-color: #7d7d7d;
+}
+
+.fa-stack-overflow:hover {
+    background-color: #ff9900;
+}
+
+.ai-google-scholar-square:hover {
+    background-color: #4285f4;
+}
+
+.fa-soundcloud:hover {
+    color: #fff;
+    vertical-align: middle;
+    background-color: #d6249f;
+    background: linear-gradient(#ff7700, #ff3801);
+}
+
+.fa-envelope:hover {
+    color: #f0f;
+    background-color: black;
+}
+
+.fa-spotify:hover {
+    color: #1DB954;
+    background-color: black;
+}
+
+.fa-reddit:hover {
+    background-color: #ff5700;
+}
+
+.fa-medium:hover {
+    color: #00ab6c;
+    background-color: black;
+}
+
+.fa-meetup:hover {
+    background-color: #ed1c40;
+}
+
+.fa-telegram:hover {
+    background-color: #0088cc;
+}
+.fa-linkedin:hover {
+    color: #0072b1;
+    background-color: black;
+}

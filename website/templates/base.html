@@ -4,46 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Alec Brazeau</title>
-    <link rel="icon" href="{% static 'favicon.png' %}">
+    <link rel="icon" href="{% static 'img/favicon.png' %}">
     <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}">
     <style>
-        nav {
-            /* opacity: 80%; */
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #03476b;
-            position: fixed;
-            top: 0;
-            width: 100%;
-        }
-        nav-li {
-            float: left;
-        }
-        nav-li a {
-            font-family: 'Allerta';
-            font-size: 16px;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 12px 12px;
-            text-decoration: none;
-        }
-        nav-li a:hover {
-            background-color: black;
-        }
-        .active {
-            background-color: #002233;
-        }
+        * { margin: 0; padding: 0; }
     </style>
 </head>
 <body>
     {% block content %}
     <!-- content goes here -->
     {% endblock content %}
-    <footer>
-
-    </footer>
+    <div class="row footer">
+        <div class="footer-social-icons">
+            <a class="social-icon" target="_blank" href="mailto:abrazeau1993@gmail.com"><i id="icon" class="fa fa-envelope"></i></a>
+            <a class="social-icon" target="_blank" href="https://github.com/albrazeau"><i id="icon" class="fa fa-github"></i></a>
+            <a class="social-icon" target="_blank" href="//open.spotify.com/user/1245916696"><i id="icon" class="fa fa-spotify"></i></a>
+            <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/alecbrazeau/"><i id="icon" class="fa fa-linkedin"></i></a>
+            <a class="social-icon" target="_blank" href="https://medium.com/@abrazeau"><i id="icon" class="fa fa-medium"></i></a>
+            <a class="social-icon" target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i id="icon" class="fa fa-youtube"></i></a>
+        </div>
+    </div>
 </body>
 </html>

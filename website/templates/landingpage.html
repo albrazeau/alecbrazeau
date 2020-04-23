@@ -3,94 +3,26 @@
 <html>
 <head>
 <title>Alec Brazeau</title>
-    <link rel="icon" href="{% static 'favicon.png' %}">
+    <link rel="icon" href="{% static 'img/favicon.png' %}">
     <link href='https://fonts.googleapis.com/css?family=Istok Web' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'css/landingpage.css' %}">
     <style>
         * { margin: 0; padding: 0; }
         html { 
-            background: url({% static 'landingpage.jpg' %}) no-repeat center center fixed; 
+            background: url({% static 'img/landingpage.jpg' %}) no-repeat center center fixed; 
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
         }
-        .landing-title {
-            position: fixed;
-            top: 45%;
-            left: 50%;
-            transform: translate(-50%, -45%);
-        }
-        .landing-title-text {
-            text-align: center;
-            font-family: "Istok Web";
-            font-size: 75px;
-            font-style: bold;
-            color: white;
-        }
-        .landing-title-text a {
-            color: white;
-            text-decoration:none;
-        }
-        .landing-title-text a:hover {
-            color: slategrey;
-            text-shadow: 4px 6px 4px black;
-        }
-        .landing-title-body {
-            text-align: center;
-            font-family: "Istok Web";
-            font-size: 35px;
-            color: darkgrey;
-        }
-        .landing-title-body a {
-            color: darkgrey;
-            text-decoration: none;
-        }
-        .landing-title-body a:hover {
-            color: slategrey;
-            text-shadow: 2px 4px 2px black;
-        }
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        li {
-            float: left;
-            text-decoration: none;
-            padding: 16px 32px;
-        }
-        .footer {
-            background: black;
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            margin: 0px auto;
-            text-align: center;
-            color: white;
-            height: 40px;
-            align-items: center;
-        }
-        .footer ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        .footer li {
-            padding: 4px;
-        }
-        .footer li a {
-            margin: 50%;
-        }
-        .footer a img {
-            height: 32px;
-            width: auto;
-        } 
     </style>
 </head>
 <body>
+    <div class="logo">
+        <img src="{% static 'img/logo.png' %}" alt="Logo" width="96" height="96">
+    </div>
     <div class="landing-title">
         <div class="landing-title-text">
             <a href="/">Alec Brazeau</a>
@@ -101,20 +33,14 @@
             <li><a href="/resume">Resume</a></li>
         </ul>
     </div>
-    <div class="footer">
-        <div class="social">
-            <ul>
-                <li>
-                    <a href="https://github.com/albrazeau" target="_blank">
-                        <img src={% static 'GitHub-Mark-64px.png' %} alt="GitHub">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/alecbrazeau" target="_blank">
-                        <img src={% static 'LI-In-Bug.png' %} alt="LinkedIn">
-                    </a>
-                </li>
-            </ul>
+    <div class="row footer">
+        <div class="footer-social-icons">
+            <a class="social-icon" target="_blank" href="mailto:abrazeau1993@gmail.com"><i id="icon" class="fa fa-envelope"></i></a>
+            <a class="social-icon" target="_blank" href="https://github.com/albrazeau"><i id="icon" class="fa fa-github"></i></a>
+            <a class="social-icon" target="_blank" href="//open.spotify.com/user/1245916696"><i id="icon" class="fa fa-spotify"></i></a>
+            <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/alecbrazeau/"><i id="icon" class="fa fa-linkedin"></i></a>
+            <a class="social-icon" target="_blank" href="https://medium.com/@abrazeau"><i id="icon" class="fa fa-medium"></i></a>
+            <a class="social-icon" target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i id="icon" class="fa fa-youtube"></i></a>
         </div>
     </div>
 </body>
