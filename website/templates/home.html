@@ -1,17 +1,25 @@
 {% extends "base.html" %}
 {% block content %}
-<style>
-
-</style>
-<header>
-
-</header>
-<div>
+<nav>
+    <nav-li>
+        <a href="/">Alec Brazeau</a>
+    </nav-li>
+    <nav-li>
+        <a class="active" href="/home">Home</a>
+    </nav-li>
+    <nav-li>
+        <a href="/aboutme">About Me</a>
+    </nav-li>
+    <nav-li>
+        <a href="/resume">Resume</a>
+    </nav-li>
+</nav>
+<div style="margin-top:65px;">
     <h1 align="center">
         Is this thing on?!
     </h1>
-   <button onclick="document.location = 'aboutme'">About Me</button>
-   <button onclick="document.location = 'resume'">Resume</button>
+   <button onclick="document.location = '/aboutme'">About Me</button>
+   <button onclick="document.location = '/resume'">Resume</button>
 
 </div>
 {% endblock %}

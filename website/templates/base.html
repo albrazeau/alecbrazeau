@@ -5,14 +5,40 @@
     <meta charset="UTF-8">
     <title>Alec Brazeau</title>
     <link rel="icon" href="{% static 'favicon.png' %}">
+    <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
+    <style>
+        nav {
+            /* opacity: 80%; */
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #03476b;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        nav-li {
+            float: left;
+        }
+        nav-li a {
+            font-family: 'Allerta';
+            font-size: 16px;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 12px 12px;
+            text-decoration: none;
+        }
+        nav-li a:hover {
+            background-color: black;
+        }
+        .active {
+            background-color: #002233;
+        }
+    </style>
 </head>
 <body>
-    <style>
-
-    </style>
-    <nav>
-
-    </nav>
     {% block content %}
     <!-- content goes here -->
     {% endblock content %}

@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Alec Brazeau</title>
+    <link rel="icon" href="{% static 'favicon.png' %}">
+    <link href='https://fonts.googleapis.com/css?family=Istok Web' rel='stylesheet'>
+    <style>
+        * { margin: 0; padding: 0; }
+        html { 
+            background: url({% static 'landingpage.jpg' %}) no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        .landing-title {
+            position: fixed;
+            top: 45%;
+            left: 50%;
+            /* bring your own prefixes */
+            transform: translate(-50%, -45%);
+        }
+        .landing-title-text {
+            text-align: center;
+            font-family: "Istok Web";
+            font-size: 75px;
+            font-style: bold;
+            color: white;
+        }
+        .landing-title-text a {
+            color: white;
+            text-decoration:none;
+        }
+        .landing-title-text a:hover {
+            color: slategrey;
+            text-shadow: 4px 6px 4px black;
+        }
+        .landing-title-body {
+            text-align: center;
+            font-family: "Istok Web";
+            font-size: 35px;
+            color: darkgrey;
+        }
+        .landing-title-body a {
+            color: darkgrey;
+            text-decoration: none;
+        }
+        .landing-title-body a:hover {
+            color: slategrey;
+            text-shadow: 2px 4px 2px black;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        li {
+            float: left;
+            text-decoration: none;
+            padding: 16px 32px;
+        }
+    </style>
+</head>
+<body>
+    <div class="landing-title">
+        <div class="landing-title-text">
+            <a href="/">Alec Brazeau</a>
+        </div>
+        <ul class="landing-title-body">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/aboutme">About Me</a></li>
+            <li><a href="/resume">Resume</a></li>
+        </ul>
+    </div>
+</body>
+</html>
