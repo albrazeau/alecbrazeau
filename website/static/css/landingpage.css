@@ -1,4 +1,4 @@
-.logo{
+.logo {
     position: fixed;
     top: 5%;
     left: 5%;
@@ -20,7 +20,13 @@
     color: white;
 }
 
-.landing-title-text a {
+.landing-title-text:hover {
+    color: slategrey;
+    text-shadow: 4px 6px 4px black;
+    cursor: pointer;
+}
+
+/* .landing-title-text a {
     color: white;
     text-decoration:none;
 }
@@ -28,7 +34,7 @@
 .landing-title-text a:hover {
     color: slategrey;
     text-shadow: 4px 6px 4px black;
-}
+} */
 
 .landing-title-body {
     text-align: center;
@@ -59,3 +65,11 @@ li {
     text-decoration: none;
     padding: 16px 32px;
 }
+
+
+/* Ice Blue RGB(174, 195, 200)
+Dark Blue RGB(10, 26, 49)
+Blue-grey RGB(73, 111, 122)
+Blue RGB(55, 112, 155)
+Blue RGB(56, 108, 155)
+Blue-Grey RGB(56 104 144) */

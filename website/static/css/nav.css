@@ -1,17 +1,31 @@
+/* Ice Blue RGB(174, 195, 200)
+Dark Blue RGB(10, 26, 49)
+Blue-grey RGB(73, 111, 122)
+Blue RGB(55, 112, 155)
+Blue RGB(56, 108, 155)
+Blue-Grey RGB(56, 104, 144) */
+
 nav {
     /* opacity: 80%; */
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #03476b;
+    background-image: linear-gradient(to right, rgb(10, 26, 49), rgb(76, 129, 172));  /* dark blue */
     position: fixed;
     top: 0;
     width: 100%;
 }
 
 nav-li {
+    float: right;
+}
+
+nav-li.landing-page {
     float: left;
+}
+nav-li.landing-page a {
+    padding: 3px 20px;
 }
 
 nav-li a {
@@ -20,14 +34,18 @@ nav-li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 12px 12px;
+    padding: 12px 24px;
     text-decoration: none;
 }
 
-nav-li a:hover {
+nav-li a.active {
     background-color: black;
 }
 
-nav-li a.active {
-    background-color: #002233;
+nav-li a:hover {
+    background-color: rgb(46, 84, 116);
+}
+
+nav-li a.active:hover {
+    background-color: rgb(46, 84, 116);
 }

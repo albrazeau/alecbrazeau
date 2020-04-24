@@ -2,7 +2,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Alec Brazeau</title>
+    <title>Alec Brazeau</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="{% static 'img/favicon.png' %}">
     <link href='https://fonts.googleapis.com/css?family=Istok Web' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -24,13 +26,14 @@
         <img src="{% static 'img/logo.png' %}" alt="Logo" width="96" height="96">
     </div>
     <div class="landing-title">
-        <div class="landing-title-text">
-            <a href="/">Alec Brazeau</a>
+        <div class="landing-title-text" id="name-title" onclick="anmiateTitle(this)">
+            Alec Brazeau
         </div>
         <ul class="landing-title-body">
             <li><a href="/home">Home</a></li>
             <li><a href="/aboutme">About Me</a></li>
-            <li><a href="/resume">Resume</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="{% static 'documents/Alec_Brazeau_Resume_OLD.pdf' %}" target="_blank">Resume</a></li>
         </ul>
     </div>
     <div class="row footer">
@@ -43,5 +46,6 @@
             <a class="social-icon" target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i id="icon" class="fa fa-youtube"></i></a>
         </div>
     </div>
+    <script src="{% static 'js/landingpage.js' %}"></script>
 </body>
 </html>
