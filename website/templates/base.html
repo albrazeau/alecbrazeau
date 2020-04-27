@@ -7,18 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="{% static 'img/favicon.png' %}">
     <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Istok Web' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{% static 'css/footer.css' %}">
     <link rel="stylesheet" href="{% static 'css/nav.css' %}">
+    {% block style %}
+    <!-- page specific css geos here -->
+    {% endblock style %}
     <style>
         * { margin: 0; padding: 0; }
-        html { 
+        /* html { 
             background: radial-gradient(rgb(255, 255, 255), rgb(212, 212, 212)) no-repeat center center fixed;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
-        }
+        } */
     </style>
 </head>
 <body>
@@ -35,5 +39,8 @@
             <a class="social-icon" target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i id="icon" class="fa fa-youtube"></i></a>
         </div>
     </div>
+    {% block script %}
+    <!-- page specific js geos here --> 
+    {% endblock script %}
 </body>
 </html>

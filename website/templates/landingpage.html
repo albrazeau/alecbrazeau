@@ -25,15 +25,15 @@
     <div class="logo">
         <img src="{% static 'img/logo.png' %}" alt="Logo" width="96" height="96">
     </div>
-    <div class="landing-title">
-        <div class="landing-title-text" id="name-title" onclick="titleClick()">
+    <div class="flex-container">
+        <div class="landing-title" onclick="titleClick()">
             Alec Brazeau
         </div>
-        <ul class="landing-title-body">
-            <li><a href="/home">Home</a></li>
-            <li><a href="/aboutme">About Me</a></li>
-            <li><a href="/projects">Projects</a></li>
-            <li><a href="{% static 'documents/Alec_Brazeau_Resume.pdf' %}" target="_blank">Resume</a></li>
+        <ul class="flex-list">
+            <li class="flex-list-item"><a href="/rivers">Rivers</a></li>
+            <li class="flex-list-item"><a href="/aboutme">About Me</a></li>
+            <li class="flex-list-item"><a href="/projects">Projects</a></li>
+            <li class="flex-list-item"><a href="{% static 'documents/Alec_Brazeau_Resume.pdf' %}" target="_blank">Resume</a></li>
         </ul>
     </div>
     <div class="row footer">

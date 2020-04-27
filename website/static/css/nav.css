@@ -27,6 +27,15 @@ nav-li.landing-page {
 nav-li.landing-page a {
     padding: 3px 20px;
 }
+nav-li.landing-page a span{
+    font-family: 'Allerta';
+    font-size: 16px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 9px 0px;
+    text-decoration: none;
+}
 
 nav-li a {
     font-family: 'Allerta';
