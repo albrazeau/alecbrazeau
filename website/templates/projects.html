@@ -1,5 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/projects.css' %}">
+{% endblock %}
 {% block content %}
 <nav>
     <nav-li class="landing-page">
@@ -21,13 +24,27 @@
         <a href="/rivers">Rivers</a>
     </nav-li>
 </nav>
-<div style="margin-top:45px;">
-    <h1 align="center">
-        Projects
-    </h1>
-    <h2 align="center">
-         <a href="https://www.github.com/albrazeau" target="_blank">Check out my GitHub!</a>
-    </h2>
-
+<div class="container">
+    <div class="panel" style="background-color: darkslategray;">
+        <div class="panel-title">This is a panel</div>
+    </div>
+    <div class="panel" style="background-color: black;">
+        <div class="panel-title" style="color:white;">This is another panel</div>
+    </div>
+    <div class="panel" style="background-color: blue;">
+        <div class="panel-title">This is another panel</div>
+    </div>
+    <div class="panel" style="background-color: red;">
+        <div class="panel-title">This is another panel</div>
+    </div>
+    <div class="panel" style="background-color: green;">
+        <div class="panel-title">This is another panel</div>
+    </div>
+    <div class="panel" style="background-color: yellow;">
+        <div class="panel-title">This is another panel</div>
+    </div>
+    <div class="panel" style="background-color: orange;">
+        <div class="panel-title">This is another panel</div>
+    </div>
 </div>
 {% endblock %}
