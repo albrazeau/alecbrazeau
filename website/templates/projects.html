@@ -15,13 +15,13 @@
         <a href="{% static 'documents/Alec_Brazeau_Resume.pdf' %}" target="_blank">Resume</a>
     </nav-li>
     <nav-li>
-        <a href="/aboutme">About Me</a>
+        <a href="/aboutme/">About Me</a>
     </nav-li>
     <nav-li>
-        <a class="active" href="/projects">Projects</a>
+        <a class="active" href="/projects/">Projects</a>
     </nav-li>
     <nav-li>
-        <a href="/rivers">Rivers</a>
+        <a href="/rivers/">Rivers</a>
     </nav-li>
 </nav>
 <div class="container" id="panel-container">
@@ -444,6 +444,8 @@
         $("body").css("overflow", "hidden");
         $("#popup").fadeIn(700);
         $("#panel-container").fadeOut(1000);
+        $('nav').fadeOut(1000);
+        $('.row.footer').fadeOut(1000)
         $("#popup").css("overflow-y", "scroll");
     });
 
@@ -457,6 +459,8 @@
         };
         $("body").css("overflow", "");
         $("#panel-container").fadeIn(700);
+        $('nav').fadeIn(700);
+        $('.row.footer').fadeIn(700);
         $("#popup").fadeOut(1000);
     });
 </script>
