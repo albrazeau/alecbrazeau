@@ -24,27 +24,440 @@
         <a href="/rivers">Rivers</a>
     </nav-li>
 </nav>
-<div class="container">
-    <div class="panel" style="background-color: darkslategray;">
-        <div class="panel-title">This is a panel</div>
+<div class="container" id="panel-container">
+    <div class="panel" style="background-color: rgb(2, 48, 63);">
+        <div class="panel-title" id="panel1">This is a panel</div>
+        <div class="panel-source">
+            <span>{ </span>
+            <a href="https://github.com/albrazeau" target="_blank">View Source</a>
+            <span> }</span>
+        </div>
     </div>
-    <div class="panel" style="background-color: black;">
-        <div class="panel-title" style="color:white;">This is another panel</div>
+    <div class="panel" style="background-color: rgb(29, 89, 115);">
+        <div class="panel-title" id="panel2">This is another panel</div>
+        <div class="panel-source">
+            <span>{ </span>
+            <a href="https://github.com/albrazeau" target="_blank">View Source</a>
+            <span> }</span>
+        </div>
     </div>
-    <div class="panel" style="background-color: blue;">
-        <div class="panel-title">This is another panel</div>
+    <div class="panel" style="background-color: rgb(73, 116, 139);">
+        <div class="panel-title" id="panel3">This is another panel</div>
+        <div class="panel-source">
+            <span>{ </span>
+            <a href="https://github.com/albrazeau" target="_blank">View Source</a>
+            <span> }</span>
+        </div>
     </div>
-    <div class="panel" style="background-color: red;">
-        <div class="panel-title">This is another panel</div>
+    <div class="panel" style="background-color: rgb(8, 41, 34);">
+        <div class="panel-title" id="panel4">This is another panel</div>
+        <div class="panel-source">
+            <span>{ </span>
+            <a href="https://github.com/albrazeau" target="_blank">View Source</a>
+            <span> }</span>
+        </div>
     </div>
-    <div class="panel" style="background-color: green;">
-        <div class="panel-title">This is another panel</div>
+    <div class="panel" style="background-color: rgb(34, 76, 57);">
+        <div class="panel-title" id="panel5">This is another panel</div>
+        <div class="panel-source">
+            <span>{ </span>
+            <a href="https://github.com/albrazeau" target="_blank">View Source</a>
+            <span> }</span>
+        </div>
     </div>
-    <div class="panel" style="background-color: yellow;">
-        <div class="panel-title">This is another panel</div>
+    <div class="panel" style="background-color: rgb(111, 133, 99);">
+        <div class="panel-title" id="panel6">This is another panel</div>
+        <div class="panel-source">
+            <span>{ </span>
+            <a href="https://github.com/albrazeau" target="_blank">View Source</a>
+            <span> }</span>
+        </div>
     </div>
-    <div class="panel" style="background-color: orange;">
-        <div class="panel-title">This is another panel</div>
-    </div>
+    <!-- <div class="panel" style="background-color: orange;">
+        <div class="panel-title" id="panel7">This is another panel</div>
+        <div class="panel-source">
+            <span>{ </span>
+            <a href="https://github.com/albrazeau" target="_blank">View Source</a>
+            <span> }</span>
+        </div>
+    </div> -->
 </div>
+<div class="project-popup" id="popup">
+    <i id="back-button" class="fa fa-angle-left"></i>
+    <div id="panel1-content">
+        <h1>panel 1</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget quam a ipsum elementum sodales quis posuere felis.
+            Proin semper turpis sed sollicitudin semper. Donec ipsum tortor, congue quis congue a, pulvinar eget tortor. Nulla
+            rutrum velit quis dolor placerat pharetra. Sed sollicitudin augue eu enim ultrices vestibulum. Pellentesque habitant
+            morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam sed feugiat ipsum. Mauris in felis sit
+            amet nibh condimentum tempus.
+        </p>
+        <p>
+            Quisque non mi non nunc porttitor ultricies luctus dignissim ex. Etiam finibus urna eget mauris pellentesque tristique.
+            Nulla congue commodo massa, non ornare orci semper sit amet. Suspendisse efficitur lectus in magna gravida aliquet.
+            Mauris porttitor ornare bibendum. Ut cursus enim a magna commodo, nec facilisis orci bibendum. Etiam nec commodo ante.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ante tellus, sodales
+            eu fermentum egestas, sollicitudin ac tellus. In et neque libero. Ut sed nisi dignissim, vulputate mi id, pretium elit.
+            In auctor ipsum vel tortor fermentum condimentum. Ut dolor velit, finibus vitae dui quis, vehicula dignissim nibh. Donec
+            ut interdum purus. Nullam accumsan quam nisi, ut placerat tortor mollis vel.
+        </p>
+        <p>
+            Donec in porta nibh. Praesent non semper ligula, sit amet maximus augue. Pellentesque lobortis justo vitae elit mollis,
+            vitae maximus quam tempus. Vestibulum pretium, nibh nec fringilla tristique, tortor nulla convallis nulla, vel feugiat
+            ante velit id odio. Donec feugiat pulvinar augue sit amet porta. Sed lobortis neque felis, non tempor mauris venenatis
+            ac. Ut eros elit, semper vel nisi et, volutpat fringilla diam. Sed fringilla ultrices risus sit amet faucibus. Quisque
+            at enim ut mi gravida tempus nec a quam.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget quam a ipsum elementum sodales quis posuere felis.
+            Proin semper turpis sed sollicitudin semper. Donec ipsum tortor, congue quis congue a, pulvinar eget tortor. Nulla
+            rutrum velit quis dolor placerat pharetra. Sed sollicitudin augue eu enim ultrices vestibulum. Pellentesque habitant
+            morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam sed feugiat ipsum. Mauris in felis sit
+            amet nibh condimentum tempus.
+        </p>
+        <p>
+            Quisque non mi non nunc porttitor ultricies luctus dignissim ex. Etiam finibus urna eget mauris pellentesque tristique.
+            Nulla congue commodo massa, non ornare orci semper sit amet. Suspendisse efficitur lectus in magna gravida aliquet.
+            Mauris porttitor ornare bibendum. Ut cursus enim a magna commodo, nec facilisis orci bibendum. Etiam nec commodo ante.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ante tellus, sodales
+            eu fermentum egestas, sollicitudin ac tellus. In et neque libero. Ut sed nisi dignissim, vulputate mi id, pretium elit.
+            In auctor ipsum vel tortor fermentum condimentum. Ut dolor velit, finibus vitae dui quis, vehicula dignissim nibh. Donec
+            ut interdum purus. Nullam accumsan quam nisi, ut placerat tortor mollis vel.
+        </p>
+        <p>
+            Donec in porta nibh. Praesent non semper ligula, sit amet maximus augue. Pellentesque lobortis justo vitae elit mollis,
+            vitae maximus quam tempus. Vestibulum pretium, nibh nec fringilla tristique, tortor nulla convallis nulla, vel feugiat
+            ante velit id odio. Donec feugiat pulvinar augue sit amet porta. Sed lobortis neque felis, non tempor mauris venenatis
+            ac. Ut eros elit, semper vel nisi et, volutpat fringilla diam. Sed fringilla ultrices risus sit amet faucibus. Quisque
+            at enim ut mi gravida tempus nec a quam.
+        </p>
+    </div>
+    <div id="panel2-content">
+        <h1>panel 2</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget quam a ipsum elementum sodales quis posuere felis.
+            Proin semper turpis sed sollicitudin semper. Donec ipsum tortor, congue quis congue a, pulvinar eget tortor. Nulla
+            rutrum velit quis dolor placerat pharetra. Sed sollicitudin augue eu enim ultrices vestibulum. Pellentesque habitant
+            morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam sed feugiat ipsum. Mauris in felis sit
+            amet nibh condimentum tempus.
+        </p>
+        <p>
+            Quisque non mi non nunc porttitor ultricies luctus dignissim ex. Etiam finibus urna eget mauris pellentesque tristique.
+            Nulla congue commodo massa, non ornare orci semper sit amet. Suspendisse efficitur lectus in magna gravida aliquet.
+            Mauris porttitor ornare bibendum. Ut cursus enim a magna commodo, nec facilisis orci bibendum. Etiam nec commodo ante.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ante tellus, sodales
+            eu fermentum egestas, sollicitudin ac tellus. In et neque libero. Ut sed nisi dignissim, vulputate mi id, pretium elit.
+            In auctor ipsum vel tortor fermentum condimentum. Ut dolor velit, finibus vitae dui quis, vehicula dignissim nibh. Donec
+            ut interdum purus. Nullam accumsan quam nisi, ut placerat tortor mollis vel.
+        </p>
+        <p>
+            Donec in porta nibh. Praesent non semper ligula, sit amet maximus augue. Pellentesque lobortis justo vitae elit mollis,
+            vitae maximus quam tempus. Vestibulum pretium, nibh nec fringilla tristique, tortor nulla convallis nulla, vel feugiat
+            ante velit id odio. Donec feugiat pulvinar augue sit amet porta. Sed lobortis neque felis, non tempor mauris venenatis
+            ac. Ut eros elit, semper vel nisi et, volutpat fringilla diam. Sed fringilla ultrices risus sit amet faucibus. Quisque
+            at enim ut mi gravida tempus nec a quam.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget quam a ipsum elementum sodales quis posuere felis.
+            Proin semper turpis sed sollicitudin semper. Donec ipsum tortor, congue quis congue a, pulvinar eget tortor. Nulla
+            rutrum velit quis dolor placerat pharetra. Sed sollicitudin augue eu enim ultrices vestibulum. Pellentesque habitant
+            morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam sed feugiat ipsum. Mauris in felis sit
+            amet nibh condimentum tempus.
+        </p>
+        <p>
+            Quisque non mi non nunc porttitor ultricies luctus dignissim ex. Etiam finibus urna eget mauris pellentesque tristique.
+            Nulla congue commodo massa, non ornare orci semper sit amet. Suspendisse efficitur lectus in magna gravida aliquet.
+            Mauris porttitor ornare bibendum. Ut cursus enim a magna commodo, nec facilisis orci bibendum. Etiam nec commodo ante.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ante tellus, sodales
+            eu fermentum egestas, sollicitudin ac tellus. In et neque libero. Ut sed nisi dignissim, vulputate mi id, pretium elit.
+            In auctor ipsum vel tortor fermentum condimentum. Ut dolor velit, finibus vitae dui quis, vehicula dignissim nibh. Donec
+            ut interdum purus. Nullam accumsan quam nisi, ut placerat tortor mollis vel.
+        </p>
+        <p>
+            Donec in porta nibh. Praesent non semper ligula, sit amet maximus augue. Pellentesque lobortis justo vitae elit mollis,
+            vitae maximus quam tempus. Vestibulum pretium, nibh nec fringilla tristique, tortor nulla convallis nulla, vel feugiat
+            ante velit id odio. Donec feugiat pulvinar augue sit amet porta. Sed lobortis neque felis, non tempor mauris venenatis
+            ac. Ut eros elit, semper vel nisi et, volutpat fringilla diam. Sed fringilla ultrices risus sit amet faucibus. Quisque
+            at enim ut mi gravida tempus nec a quam.
+        </p>
+    </div>
+    <div id="panel3-content">
+        <h1>panel 3</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget quam a ipsum elementum sodales quis posuere felis.
+            Proin semper turpis sed sollicitudin semper. Donec ipsum tortor, congue quis congue a, pulvinar eget tortor. Nulla
+            rutrum velit quis dolor placerat pharetra. Sed sollicitudin augue eu enim ultrices vestibulum. Pellentesque habitant
+            morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam sed feugiat ipsum. Mauris in felis sit
+            amet nibh condimentum tempus.
+        </p>
+        <p>
+            Quisque non mi non nunc porttitor ultricies luctus dignissim ex. Etiam finibus urna eget mauris pellentesque tristique.
+            Nulla congue commodo massa, non ornare orci semper sit amet. Suspendisse efficitur lectus in magna gravida aliquet.
+            Mauris porttitor ornare bibendum. Ut cursus enim a magna commodo, nec facilisis orci bibendum. Etiam nec commodo ante.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ante tellus, sodales
+            eu fermentum egestas, sollicitudin ac tellus. In et neque libero. Ut sed nisi dignissim, vulputate mi id, pretium elit.
+            In auctor ipsum vel tortor fermentum condimentum. Ut dolor velit, finibus vitae dui quis, vehicula dignissim nibh. Donec
+            ut interdum purus. Nullam accumsan quam nisi, ut placerat tortor mollis vel.
+        </p>
+        <p>
+            Donec in porta nibh. Praesent non semper ligula, sit amet maximus augue. Pellentesque lobortis justo vitae elit mollis,
+            vitae maximus quam tempus. Vestibulum pretium, nibh nec fringilla tristique, tortor nulla convallis nulla, vel feugiat
+            ante velit id odio. Donec feugiat pulvinar augue sit amet porta. Sed lobortis neque felis, non tempor mauris venenatis
+            ac. Ut eros elit, semper vel nisi et, volutpat fringilla diam. Sed fringilla ultrices risus sit amet faucibus. Quisque
+            at enim ut mi gravida tempus nec a quam.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget quam a ipsum elementum sodales quis posuere felis.
+            Proin semper turpis sed sollicitudin semper. Donec ipsum tortor, congue quis congue a, pulvinar eget tortor. Nulla
+            rutrum velit quis dolor placerat pharetra. Sed sollicitudin augue eu enim ultrices vestibulum. Pellentesque habitant
+            morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam sed feugiat ipsum. Mauris in felis sit
+            amet nibh condimentum tempus.
+        </p>
+        <p>
+            Quisque non mi non nunc porttitor ultricies luctus dignissim ex. Etiam finibus urna eget mauris pellentesque tristique.
+            Nulla congue commodo massa, non ornare orci semper sit amet. Suspendisse efficitur lectus in magna gravida aliquet.
+            Mauris porttitor ornare bibendum. Ut cursus enim a magna commodo, nec facilisis orci bibendum. Etiam nec commodo ante.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ante tellus, sodales
+            eu fermentum egestas, sollicitudin ac tellus. In et neque libero. Ut sed nisi dignissim, vulputate mi id, pretium elit.
+            In auctor ipsum vel tortor fermentum condimentum. Ut dolor velit, finibus vitae dui quis, vehicula dignissim nibh. Donec
+            ut interdum purus. Nullam accumsan quam nisi, ut placerat tortor mollis vel.
+        </p>
+        <p>
+            Donec in porta nibh. Praesent non semper ligula, sit amet maximus augue. Pellentesque lobortis justo vitae elit mollis,
+            vitae maximus quam tempus. Vestibulum pretium, nibh nec fringilla tristique, tortor nulla convallis nulla, vel feugiat
+            ante velit id odio. Donec feugiat pulvinar augue sit amet porta. Sed lobortis neque felis, non tempor mauris venenatis
+            ac. Ut eros elit, semper vel nisi et, volutpat fringilla diam. Sed fringilla ultrices risus sit amet faucibus. Quisque
+            at enim ut mi gravida tempus nec a quam.
+        </p>
+    </div>
+    <div id="panel4-content">
+        <h1>panel 4</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget quam a ipsum elementum sodales quis posuere felis.
+            Proin semper turpis sed sollicitudin semper. Donec ipsum tortor, congue quis congue a, pulvinar eget tortor. Nulla
+            rutrum velit quis dolor placerat pharetra. Sed sollicitudin augue eu enim ultrices vestibulum. Pellentesque habitant
+            morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam sed feugiat ipsum. Mauris in felis sit
+            amet nibh condimentum tempus.
+        </p>
+        <p>
+            Quisque non mi non nunc porttitor ultricies luctus dignissim ex. Etiam finibus urna eget mauris pellentesque tristique.
+            Nulla congue commodo massa, non ornare orci semper sit amet. Suspendisse efficitur lectus in magna gravida aliquet.
+            Mauris porttitor ornare bibendum. Ut cursus enim a magna commodo, nec facilisis orci bibendum. Etiam nec commodo ante.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ante tellus, sodales
+            eu fermentum egestas, sollicitudin ac tellus. In et neque libero. Ut sed nisi dignissim, vulputate mi id, pretium elit.
+            In auctor ipsum vel tortor fermentum condimentum. Ut dolor velit, finibus vitae dui quis, vehicula dignissim nibh. Donec
+            ut interdum purus. Nullam accumsan quam nisi, ut placerat tortor mollis vel.
+        </p>
+        <p>
+            Donec in porta nibh. Praesent non semper ligula, sit amet maximus augue. Pellentesque lobortis justo vitae elit mollis,
+            vitae maximus quam tempus. Vestibulum pretium, nibh nec fringilla tristique, tortor nulla convallis nulla, vel feugiat
+            ante velit id odio. Donec feugiat pulvinar augue sit amet porta. Sed lobortis neque felis, non tempor mauris venenatis
+            ac. Ut eros elit, semper vel nisi et, volutpat fringilla diam. Sed fringilla ultrices risus sit amet faucibus. Quisque
+            at enim ut mi gravida tempus nec a quam.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget quam a ipsum elementum sodales quis posuere felis.
+            Proin semper turpis sed sollicitudin semper. Donec ipsum tortor, congue quis congue a, pulvinar eget tortor. Nulla
+            rutrum velit quis dolor placerat pharetra. Sed sollicitudin augue eu enim ultrices vestibulum. Pellentesque habitant
+            morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam sed feugiat ipsum. Mauris in felis sit
+            amet nibh condimentum tempus.
+        </p>
+        <p>
+            Quisque non mi non nunc porttitor ultricies luctus dignissim ex. Etiam finibus urna eget mauris pellentesque tristique.
+            Nulla congue commodo massa, non ornare orci semper sit amet. Suspendisse efficitur lectus in magna gravida aliquet.
+            Mauris porttitor ornare bibendum. Ut cursus enim a magna commodo, nec facilisis orci bibendum. Etiam nec commodo ante.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ante tellus, sodales
+            eu fermentum egestas, sollicitudin ac tellus. In et neque libero. Ut sed nisi dignissim, vulputate mi id, pretium elit.
+            In auctor ipsum vel tortor fermentum condimentum. Ut dolor velit, finibus vitae dui quis, vehicula dignissim nibh. Donec
+            ut interdum purus. Nullam accumsan quam nisi, ut placerat tortor mollis vel.
+        </p>
+        <p>
+            Donec in porta nibh. Praesent non semper ligula, sit amet maximus augue. Pellentesque lobortis justo vitae elit mollis,
+            vitae maximus quam tempus. Vestibulum pretium, nibh nec fringilla tristique, tortor nulla convallis nulla, vel feugiat
+            ante velit id odio. Donec feugiat pulvinar augue sit amet porta. Sed lobortis neque felis, non tempor mauris venenatis
+            ac. Ut eros elit, semper vel nisi et, volutpat fringilla diam. Sed fringilla ultrices risus sit amet faucibus. Quisque
+            at enim ut mi gravida tempus nec a quam.
+        </p>
+    </div>
+    <div id="panel5-content">
+        <h1>panel 5</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget quam a ipsum elementum sodales quis posuere felis.
+            Proin semper turpis sed sollicitudin semper. Donec ipsum tortor, congue quis congue a, pulvinar eget tortor. Nulla
+            rutrum velit quis dolor placerat pharetra. Sed sollicitudin augue eu enim ultrices vestibulum. Pellentesque habitant
+            morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam sed feugiat ipsum. Mauris in felis sit
+            amet nibh condimentum tempus.
+        </p>
+        <p>
+            Quisque non mi non nunc porttitor ultricies luctus dignissim ex. Etiam finibus urna eget mauris pellentesque tristique.
+            Nulla congue commodo massa, non ornare orci semper sit amet. Suspendisse efficitur lectus in magna gravida aliquet.
+            Mauris porttitor ornare bibendum. Ut cursus enim a magna commodo, nec facilisis orci bibendum. Etiam nec commodo ante.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ante tellus, sodales
+            eu fermentum egestas, sollicitudin ac tellus. In et neque libero. Ut sed nisi dignissim, vulputate mi id, pretium elit.
+            In auctor ipsum vel tortor fermentum condimentum. Ut dolor velit, finibus vitae dui quis, vehicula dignissim nibh. Donec
+            ut interdum purus. Nullam accumsan quam nisi, ut placerat tortor mollis vel.
+        </p>
+        <p>
+            Donec in porta nibh. Praesent non semper ligula, sit amet maximus augue. Pellentesque lobortis justo vitae elit mollis,
+            vitae maximus quam tempus. Vestibulum pretium, nibh nec fringilla tristique, tortor nulla convallis nulla, vel feugiat
+            ante velit id odio. Donec feugiat pulvinar augue sit amet porta. Sed lobortis neque felis, non tempor mauris venenatis
+            ac. Ut eros elit, semper vel nisi et, volutpat fringilla diam. Sed fringilla ultrices risus sit amet faucibus. Quisque
+            at enim ut mi gravida tempus nec a quam.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget quam a ipsum elementum sodales quis posuere felis.
+            Proin semper turpis sed sollicitudin semper. Donec ipsum tortor, congue quis congue a, pulvinar eget tortor. Nulla
+            rutrum velit quis dolor placerat pharetra. Sed sollicitudin augue eu enim ultrices vestibulum. Pellentesque habitant
+            morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam sed feugiat ipsum. Mauris in felis sit
+            amet nibh condimentum tempus.
+        </p>
+        <p>
+            Quisque non mi non nunc porttitor ultricies luctus dignissim ex. Etiam finibus urna eget mauris pellentesque tristique.
+            Nulla congue commodo massa, non ornare orci semper sit amet. Suspendisse efficitur lectus in magna gravida aliquet.
+            Mauris porttitor ornare bibendum. Ut cursus enim a magna commodo, nec facilisis orci bibendum. Etiam nec commodo ante.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ante tellus, sodales
+            eu fermentum egestas, sollicitudin ac tellus. In et neque libero. Ut sed nisi dignissim, vulputate mi id, pretium elit.
+            In auctor ipsum vel tortor fermentum condimentum. Ut dolor velit, finibus vitae dui quis, vehicula dignissim nibh. Donec
+            ut interdum purus. Nullam accumsan quam nisi, ut placerat tortor mollis vel.
+        </p>
+        <p>
+            Donec in porta nibh. Praesent non semper ligula, sit amet maximus augue. Pellentesque lobortis justo vitae elit mollis,
+            vitae maximus quam tempus. Vestibulum pretium, nibh nec fringilla tristique, tortor nulla convallis nulla, vel feugiat
+            ante velit id odio. Donec feugiat pulvinar augue sit amet porta. Sed lobortis neque felis, non tempor mauris venenatis
+            ac. Ut eros elit, semper vel nisi et, volutpat fringilla diam. Sed fringilla ultrices risus sit amet faucibus. Quisque
+            at enim ut mi gravida tempus nec a quam.
+        </p>
+    </div>
+    <div id="panel6-content">
+        <h1>panel 6</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget quam a ipsum elementum sodales quis posuere felis.
+            Proin semper turpis sed sollicitudin semper. Donec ipsum tortor, congue quis congue a, pulvinar eget tortor. Nulla
+            rutrum velit quis dolor placerat pharetra. Sed sollicitudin augue eu enim ultrices vestibulum. Pellentesque habitant
+            morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam sed feugiat ipsum. Mauris in felis sit
+            amet nibh condimentum tempus.
+        </p>
+        <p>
+            Quisque non mi non nunc porttitor ultricies luctus dignissim ex. Etiam finibus urna eget mauris pellentesque tristique.
+            Nulla congue commodo massa, non ornare orci semper sit amet. Suspendisse efficitur lectus in magna gravida aliquet.
+            Mauris porttitor ornare bibendum. Ut cursus enim a magna commodo, nec facilisis orci bibendum. Etiam nec commodo ante.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ante tellus, sodales
+            eu fermentum egestas, sollicitudin ac tellus. In et neque libero. Ut sed nisi dignissim, vulputate mi id, pretium elit.
+            In auctor ipsum vel tortor fermentum condimentum. Ut dolor velit, finibus vitae dui quis, vehicula dignissim nibh. Donec
+            ut interdum purus. Nullam accumsan quam nisi, ut placerat tortor mollis vel.
+        </p>
+        <p>
+            Donec in porta nibh. Praesent non semper ligula, sit amet maximus augue. Pellentesque lobortis justo vitae elit mollis,
+            vitae maximus quam tempus. Vestibulum pretium, nibh nec fringilla tristique, tortor nulla convallis nulla, vel feugiat
+            ante velit id odio. Donec feugiat pulvinar augue sit amet porta. Sed lobortis neque felis, non tempor mauris venenatis
+            ac. Ut eros elit, semper vel nisi et, volutpat fringilla diam. Sed fringilla ultrices risus sit amet faucibus. Quisque
+            at enim ut mi gravida tempus nec a quam.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget quam a ipsum elementum sodales quis posuere felis.
+            Proin semper turpis sed sollicitudin semper. Donec ipsum tortor, congue quis congue a, pulvinar eget tortor. Nulla
+            rutrum velit quis dolor placerat pharetra. Sed sollicitudin augue eu enim ultrices vestibulum. Pellentesque habitant
+            morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam sed feugiat ipsum. Mauris in felis sit
+            amet nibh condimentum tempus.
+        </p>
+        <p>
+            Quisque non mi non nunc porttitor ultricies luctus dignissim ex. Etiam finibus urna eget mauris pellentesque tristique.
+            Nulla congue commodo massa, non ornare orci semper sit amet. Suspendisse efficitur lectus in magna gravida aliquet.
+            Mauris porttitor ornare bibendum. Ut cursus enim a magna commodo, nec facilisis orci bibendum. Etiam nec commodo ante.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ante tellus, sodales
+            eu fermentum egestas, sollicitudin ac tellus. In et neque libero. Ut sed nisi dignissim, vulputate mi id, pretium elit.
+            In auctor ipsum vel tortor fermentum condimentum. Ut dolor velit, finibus vitae dui quis, vehicula dignissim nibh. Donec
+            ut interdum purus. Nullam accumsan quam nisi, ut placerat tortor mollis vel.
+        </p>
+        <p>
+            Donec in porta nibh. Praesent non semper ligula, sit amet maximus augue. Pellentesque lobortis justo vitae elit mollis,
+            vitae maximus quam tempus. Vestibulum pretium, nibh nec fringilla tristique, tortor nulla convallis nulla, vel feugiat
+            ante velit id odio. Donec feugiat pulvinar augue sit amet porta. Sed lobortis neque felis, non tempor mauris venenatis
+            ac. Ut eros elit, semper vel nisi et, volutpat fringilla diam. Sed fringilla ultrices risus sit amet faucibus. Quisque
+            at enim ut mi gravida tempus nec a quam.
+        </p>
+    </div>
+    <!-- <div id="panel7-content">
+        <h1>panel 7</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget quam a ipsum elementum sodales quis posuere felis.
+            Proin semper turpis sed sollicitudin semper. Donec ipsum tortor, congue quis congue a, pulvinar eget tortor. Nulla
+            rutrum velit quis dolor placerat pharetra. Sed sollicitudin augue eu enim ultrices vestibulum. Pellentesque habitant
+            morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam sed feugiat ipsum. Mauris in felis sit
+            amet nibh condimentum tempus.
+        </p>
+        <p>
+            Quisque non mi non nunc porttitor ultricies luctus dignissim ex. Etiam finibus urna eget mauris pellentesque tristique.
+            Nulla congue commodo massa, non ornare orci semper sit amet. Suspendisse efficitur lectus in magna gravida aliquet.
+            Mauris porttitor ornare bibendum. Ut cursus enim a magna commodo, nec facilisis orci bibendum. Etiam nec commodo ante.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ante tellus, sodales
+            eu fermentum egestas, sollicitudin ac tellus. In et neque libero. Ut sed nisi dignissim, vulputate mi id, pretium elit.
+            In auctor ipsum vel tortor fermentum condimentum. Ut dolor velit, finibus vitae dui quis, vehicula dignissim nibh. Donec
+            ut interdum purus. Nullam accumsan quam nisi, ut placerat tortor mollis vel.
+        </p>
+        <p>
+            Donec in porta nibh. Praesent non semper ligula, sit amet maximus augue. Pellentesque lobortis justo vitae elit mollis,
+            vitae maximus quam tempus. Vestibulum pretium, nibh nec fringilla tristique, tortor nulla convallis nulla, vel feugiat
+            ante velit id odio. Donec feugiat pulvinar augue sit amet porta. Sed lobortis neque felis, non tempor mauris venenatis
+            ac. Ut eros elit, semper vel nisi et, volutpat fringilla diam. Sed fringilla ultrices risus sit amet faucibus. Quisque
+            at enim ut mi gravida tempus nec a quam.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget quam a ipsum elementum sodales quis posuere felis.
+            Proin semper turpis sed sollicitudin semper. Donec ipsum tortor, congue quis congue a, pulvinar eget tortor. Nulla
+            rutrum velit quis dolor placerat pharetra. Sed sollicitudin augue eu enim ultrices vestibulum. Pellentesque habitant
+            morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam sed feugiat ipsum. Mauris in felis sit
+            amet nibh condimentum tempus.
+        </p>
+        <p>
+            Quisque non mi non nunc porttitor ultricies luctus dignissim ex. Etiam finibus urna eget mauris pellentesque tristique.
+            Nulla congue commodo massa, non ornare orci semper sit amet. Suspendisse efficitur lectus in magna gravida aliquet.
+            Mauris porttitor ornare bibendum. Ut cursus enim a magna commodo, nec facilisis orci bibendum. Etiam nec commodo ante.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ante tellus, sodales
+            eu fermentum egestas, sollicitudin ac tellus. In et neque libero. Ut sed nisi dignissim, vulputate mi id, pretium elit.
+            In auctor ipsum vel tortor fermentum condimentum. Ut dolor velit, finibus vitae dui quis, vehicula dignissim nibh. Donec
+            ut interdum purus. Nullam accumsan quam nisi, ut placerat tortor mollis vel.
+        </p>
+        <p>
+            Donec in porta nibh. Praesent non semper ligula, sit amet maximus augue. Pellentesque lobortis justo vitae elit mollis,
+            vitae maximus quam tempus. Vestibulum pretium, nibh nec fringilla tristique, tortor nulla convallis nulla, vel feugiat
+            ante velit id odio. Donec feugiat pulvinar augue sit amet porta. Sed lobortis neque felis, non tempor mauris venenatis
+            ac. Ut eros elit, semper vel nisi et, volutpat fringilla diam. Sed fringilla ultrices risus sit amet faucibus. Quisque
+            at enim ut mi gravida tempus nec a quam.
+        </p>
+    </div> -->
+</div>
+{% endblock %}
+{% block script %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    $(".panel-title").click(function (event) {
+        var windowScrollTop = $(window).scrollTop();
+        var idClicked = event.target.id;
+        var bgColor = event.target.parentElement.style.backgroundColor;
+        // var textColor = event.target.style.color;
+        $("#popup").css("margin-top", windowScrollTop);
+        $("#popup").css("background-color", bgColor);
+        // $("#popup").css("color", textColor);
+        $("#" + idClicked + "-content").css("display", "inherit");
+        $("body").css("overflow", "hidden");
+        $("#popup").fadeIn(700);
+        $("#panel-container").fadeOut(1000);
+        $("#popup").css("overflow-y", "scroll");
+    });
+
+    $("#back-button").click(function (event) {
+        var siblings = event.target.parentElement.children
+        for (let i = 0; i < siblings.length; i++) {
+            const element = siblings[i];
+            if (element.id.includes("-content") && element.style.display != "none") {
+                $("#" + element.id).css("display", "none")
+            };
+        };
+        $("body").css("overflow", "");
+        $("#panel-container").fadeIn(700);
+        $("#popup").fadeOut(1000);
+    });
+</script>
 {% endblock %}
