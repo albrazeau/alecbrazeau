@@ -5,7 +5,7 @@ a {
 .container {
     display: flex;
     flex-direction: column;
-    max-width: 65em;
+    max-width: 70%;
     margin: 0 auto;
     margin-top: 45px;
     margin-bottom: 45px;
@@ -32,6 +32,7 @@ a {
     border-bottom: solid 2px rgb(10, 26, 49);
     padding-right: 2px;
     margin-top: 30px;
+    margin-left: 1px;
 }
 
 #tabs li {
@@ -110,3 +111,54 @@ Blue-grey RGB(73, 111, 122)
 Blue RGB(55, 112, 155)
 Blue RGB(56, 108, 155)
 Blue-Grey RGB(56 104 144) */
+
+
+@media only screen and (max-width: 672px) {
+    .container {
+        margin-top: 95px;
+    }
+
+    .intro {
+        font-size: 1em;
+    }
+
+    #tabs {
+        height: 38px;
+    }
+
+    #tabs li a {
+        font-size: 1em;
+    }
+
+    .tab-container p {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .intro {
+        font-size: 0.75em;
+    }
+
+    #tabs li a {
+        font-size: 0.75em;
+    }
+
+    #tabs {
+        height: 32px;
+    }
+
+    .tab-container p {
+        font-size: 0.75em;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .container {
+        margin-top: 145px;
+    }
+}

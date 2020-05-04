@@ -26,7 +26,7 @@ SECRET_KEY = mysecrets.SECRET_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['.alecbrazeau.com']
+ALLOWED_HOSTS = ['.alecbrazeau.com', '.127.0.0.1']
 
 
 # Application definition
