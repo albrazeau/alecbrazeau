@@ -4,27 +4,6 @@
 <link rel="stylesheet" href="{% static 'css/aboutme.css' %}">
 {% endblock %}
 {% block content %}
-<nav>
-    <nav-li class="landing-page">
-        <a href="/"><img src="{% static 'img/logo.png' %}" width="35" height="35"></a>
-    </nav-li>
-    <nav-li class="landing-page">
-        <a href="/"><span>Alec Brazeau</span></a>
-    </nav-li>
-    <nav-li>
-        <a href="{% static 'documents/Alec_Brazeau_Resume.pdf' %}" target="_blank">Resume</a>
-    </nav-li>
-
-    <nav-li>
-        <a class="active" href="/aboutme">About Me</a>
-    </nav-li>
-    <nav-li>
-        <a href="/projects">Projects</a>
-    </nav-li>
-    <nav-li>
-        <a href="/rivers">Rivers</a>
-    </nav-li>
-</nav>
 <div class="container">
     <div class="title">About Me</div>
     <div class="intro">
@@ -216,21 +195,21 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="{% static 'js/aboutme.js' %}"></script>
 <script>
-$(document).ready(function() {
-    $('#tabs li a:not(:first)').addClass('inactive');
-    $('.tab-container').hide();
-    $('.tab-container:first').show();
+    $(document).ready(function() {
+        $('#tabs li a:not(:first)').addClass('inactive');
+        $('.tab-container').hide();
+        $('.tab-container:first').show();
 
-    $('#tabs li a').click(function() {
-        var t = $(this).attr('id');
-        if ($(this).hasClass('inactive')) { //this is the start of our condition 
-            $('#tabs li a').addClass('inactive');
-            $(this).removeClass('inactive');
+        $('#tabs li a').click(function() {
+            var t = $(this).attr('id');
+            if ($(this).hasClass('inactive')) { //this is the start of our condition 
+                $('#tabs li a').addClass('inactive');
+                $(this).removeClass('inactive');
 
-            $('.tab-container').hide();
-            $('#' + t + '-content').fadeIn('slow');
-        }
+                $('.tab-container').hide();
+                $('#' + t + '-content').fadeIn('slow');
+            }
+        });
     });
-});
 </script>
 {% endblock %}
