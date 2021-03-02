@@ -186,6 +186,35 @@ a.ex:hover, a.ex:active {
     width: 75%;
     padding: 1.5%;
   }
+
+
+  h2 {
+    font-size: revert;
+  }
+
+
+  h1 {
+    font-size: revert;
+  }
+
+  h5 {
+    font-size: revert;
+  }
+
+  a.nav:link, a.nav:hover, a.nav:active, a.nav:visited {
+    margin: 0; 
+  }
+
+ .description {
+    width: 100%; 
+    position: relative;
+    float: right;
+  }
+  
+  h2 br {
+    display: none;
+  }
+
 }
 
 /* FOOTER */
@@ -310,3 +339,4 @@ a.ex:hover, a.ex:active {
   color: #0e8ccf;
   background-color: #11161b;
 }
+
