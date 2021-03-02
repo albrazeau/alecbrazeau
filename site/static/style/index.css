@@ -1,0 +1,312 @@
+html, body {
+  scroll-behavior: smooth;
+  background-color: #11161b;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0%; /* This gets rid of a small line that appears on the left hand side of the screen, like everything has slight padding */
+  justify-content: center;
+  margin: auto;
+  width: 1500px;
+  font-family: "Istok Web";
+  color: #CBD2D9
+}
+
+h2 {
+font-size: 180%; 
+font-style: normal; 
+font-variant: normal; 
+font-weight: 300; 
+}
+
+
+h1 {
+font-size: 310%; 
+font-style: normal; 
+font-variant: normal; 
+font-weight: normal; 
+background-color: transparent;
+}
+
+h5 {
+font-size: 110%; 
+font-weight: 400; 
+}
+
+p {
+font-size: 100%; 
+}
+
+u {
+  background-color: transparent;
+}
+
+.navigation { /* container where site navigation buttons sit */
+  padding-top: 0%;
+  padding-bottom: 0%;
+  font-size: 42;
+  text-align: right;
+  position: relative;
+}
+
+a.nav:link, a.nav:hover, a.nav:active, a.nav:visited {
+  background-color: #38434d;
+  border-radius: 4px;
+  color: #E4E7EB;
+  text-decoration: none;
+  cursor: pointer; /* Pointer/hand icon */
+  font-size: 110%; 
+  margin: 50px;
+  padding: 5px;
+}
+
+a.nav:hover, a.nav:active {
+  background: #743124;
+  border-radius: 4px;
+  color: #CBD2D9;
+  padding: 5px;
+}
+
+.highlight {
+  background: #743124;
+  border-radius: 4px;
+  color: #E4E7EB;
+  text-decoration: none;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+a.hl:link, a.hl:hover, a.hl:active, a.hl:visited {
+  background: #b0deff;
+  border-radius: 4px;
+  color: black;
+  text-decoration: none;
+  padding: .25px;
+}
+
+a.hl:hover, a.hl:active {
+  background: #8acfff;
+  border-radius: 4px;
+  color: black;
+  text-decoration: underline;
+  padding: .25px;
+}
+
+a.ex:link, a.ex:hover, a.ex:active, a.ex:visited {
+  background: none;
+  border-radius: 4px;
+  color: #E4E7EB;
+  text-decoration: underline;
+  padding: .25px;
+}
+
+a.ex:hover, a.ex:active {
+  background: #7c60bd;
+  border-radius: 4px;
+  color: black;
+  text-decoration: underline;
+  padding: .25px;
+}
+
+.btn-group button {
+  background-color: transparent; /* Transparent background */
+  border: transparent; /* Transparent border */
+  color: #CBD2D9;
+  padding: 10px 50px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: center; /* Float the buttons side by side */
+  font-size: 18px; 
+}
+
+/* Add underline on hover */
+.btn-group button:hover {
+  text-decoration: underline;
+}
+
+/* width of content box remains the same, even when zoomed in or out (note that the text still spreads out as the page grows) */
+.pagewidth, #width {
+  margin: auto;
+  width: 75%;
+  padding: 1.5%;
+}
+
+.header {
+  width: 100%;
+  float: left;
+  background-color: transparent;
+  position: relative;
+  display: inline-block;
+}
+
+/*What I'm Doing, What I've Done, What I've Learned Section*/
+.aboutmesection {
+  width: 100%;
+  float: left;
+  background-color: transparent;
+  position: relative;
+}
+
+.largetext {
+  width:39%;
+  position: relative;
+  float: left;
+}
+
+/*About me description section (text blocks next to what I'm doing/ done/ learned etc.*/
+.description {
+  width:61%;
+  position: relative;
+  float: right;
+}
+
+.text {
+  display: block;
+  color: #fff;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 1.9em 0 0 1.2em;
+  position: relative;
+  background: transparent !important;
+}
+
+/* MOBILE */
+
+@media only screen and (max-width: 1330px) {
+
+  html, body {
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0%; /* This gets rid of a small line that appears on the left hand side of the screen, like everything has slight padding */
+    margin: auto;
+  }
+
+  /* width of content box remains the same, even when zoomed in or out (note that the text still spreads out as the page grows) */
+  .pagewidth, #width {
+    margin: auto;
+    width: 75%;
+    padding: 1.5%;
+  }
+}
+
+/* FOOTER */
+
+.row.footer {
+  flex-grow: 1;
+  flex-basis: fit-content;
+  background: #11161b;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-social-icons {
+  width: fit-content;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.social-icon {
+  color: #E4E7EB;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+  background-color: #38434d;
+  padding: 0px;
+  border-radius: 3px;
+}
+
+#icon {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 3px;
+}
+
+.social-icons a {
+  color: #E4E7EB;
+  text-decoration: none;
+}
+
+.fa-instagram:hover {
+  color: #fff;
+  vertical-align: middle;
+  background-color: #d6249f;
+  background: radial-gradient(circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%);
+}
+
+.fa-twitter:hover {
+  background-color: #00aced;
+}
+
+.fa-youtube:hover {
+  color: #e92323;
+  background-color: #11161b;
+}
+
+.fa-github:hover {
+  color: #803fe2;
+  background-color: #11161b;
+}
+
+.fa-apple:hover {
+  background-color: #7d7d7d;
+}
+
+.fa-stack-overflow:hover {
+  background-color: #ff9900;
+}
+
+.ai-google-scholar-square:hover {
+  background-color: #4285f4;
+}
+
+.fa-soundcloud:hover {
+  color: #fff;
+  vertical-align: middle;
+  background-color: #d6249f;
+  background: linear-gradient(#ff7700, #ff3801);
+}
+
+.fa-envelope:hover {
+  color: rgb(206, 92, 26);
+  background-color: #11161b;
+}
+
+.fa-spotify:hover {
+  color: #18d359;
+  background-color: #11161b;
+}
+
+.fa-reddit:hover {
+  background-color: #ff5700;
+}
+
+.fa-medium:hover {
+  color: #00ab6c;
+  background-color: #11161b;
+}
+
+.fa-meetup:hover {
+  background-color: #ed1c40;
+}
+
+.fa-telegram:hover {
+  background-color: #0088cc;
+}
+.fa-linkedin:hover {
+  color: #0e8ccf;
+  background-color: #11161b;
+}
