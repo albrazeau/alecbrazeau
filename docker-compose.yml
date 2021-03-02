@@ -4,9 +4,11 @@ services:
     container_name: web
     image: caddy:2.3.0-alpine
     volumes:
-      - ./site:/usr/share/caddy
+    # - ./site:/usr/share/caddy
+      - ./site:/srv
       - ./data:/data
     ports:
       - 80:80
       - 443:443
-    # command: caddy file-server --domain alecbrazeau.com
+    restart: on-failure
+    command: caddy file-server --domain alecbrazeau.com
