@@ -52,6 +52,10 @@ a {
   color: #dd6819;
 }
 
+h2 a:hover {
+  text-decoration: underline;
+}
+
 .menu {
   position: absolute;
   bottom: 6%;
