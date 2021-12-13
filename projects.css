@@ -4,17 +4,6 @@
   list-style: none;
 }
 
-html,
-body,
-.all-bg,
-.all-bg table,
-.all-bg td,
-.big-title {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100%;
@@ -34,147 +23,54 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
+  z-index: -9999;
 }
 
-h1,
-h2,
-.large,
-.left {
-  font-family: "Century Gothic", "Lucida Grande", Arial, sans-serif;
-  font-size: 100%;
-  color: black;
+.holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  /* margin-left: 15%;
+  margin-right: 27%; */
+  width: 60%;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  background-color: rgba(112, 128, 144, 0.5);
+  padding: 4em;
+  border-radius: 3em;
 }
 
 a {
   text-decoration: none;
-  outline: 0;
-  cursor: pointer;
   color: #dd6819;
 }
 
-h2 a:hover {
+a:hover {
   text-decoration: underline;
 }
 
-.menu {
-  position: absolute;
-  bottom: 6%;
-  left: 141px;
-  z-index: 60;
-  width: 100%;
-  line-height: 12px;
-}
-
-.menu div {
-  height: 63px;
-  background: rgb(49, 49, 49);
-  font-size: 100%;
-}
-.menu h1 {
-  position: relative;
-  left: -141px;
-  margin-bottom: -63px;
-  width: 140px;
-  opacity: 0.99;
-  font-size: 100%;
-}
-
-h1 a {
-  padding: 41px 10px 10px 0;
-  color: white;
-  background: black 0 -30px repeat-x;
-  font-size: 100%;
-  text-align: right;
-  display: block;
-}
-
-h1 a:hover {
-  background: rgb(70, 70, 70) 0 -30px repeat-x;
-}
-
-.menu ul {
-  float: left;
-  width: 110px;
-}
-
-ul li {
-  list-style: none;
-}
-
-li a {
-  height: 18%;
-  padding-top: 42px;
-  padding-bottom: 9px;
-  padding-left: 10px;
-  font-weight: bold;
-  color: white;
-  display: block;
-  font-size: 100%;
-}
-
-li a:hover {
-  background-color: rgb(70, 70, 70);
-}
-
-.big-title {
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: auto;
-}
-
-.box {
-  position: absolute;
-  top: 15%;
-  right: 200px;
-  width: 500px;
-  padding-bottom: 100px;
-}
-
-.box div {
-  line-height: 1.5em;
-  background: #fff;
-  padding: 20px 30px;
-}
-
-.box div a {
-  text-decoration: underline;
-}
-
-.large {
-  text-align: right;
-  top: 20%;
-  right: 120px;
-  font-size: 100%;
-}
-
-.left {
-  text-align: left;
-  right: auto;
-  left: 180px;
-  font-size: 100%;
-}
-
-.large h1 {
+.page-title h1 {
+  font-family: "Century Gothic", "Lucida Grande", Arial, sans-serif;
   font-size: 450%;
 }
 
-.large h2 {
-  font-size: 110%;
+.project-title h1 {
+  font-family: "Century Gothic", "Lucida Grande", Arial, sans-serif;
+  font-size: 275%;
+  color: rgb(161, 161, 161);
+}
+
+.content h2 {
   color: white;
 }
 
-@media only screen and (max-width: 700px) {
-  html,
-  body {
-    scroll-behavior: smooth;
-  }
-
-  .box {
-    top: 10%;
-    left: 10px;
-    width: 95vw;
-  }
+.content h2 i {
+  font-size: 85%;
+  font-weight: lighter;
 }
 
 /* FOOTER */
