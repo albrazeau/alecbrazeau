@@ -34,8 +34,6 @@ body {
 }
 
 .content {
-  /* margin-left: 15%;
-  margin-right: 27%; */
   width: 60%;
   margin-top: 4em;
   margin-bottom: 4em;
@@ -71,6 +69,39 @@ a:hover {
 .content h2 i {
   font-size: 85%;
   font-weight: lighter;
+}
+
+@media only screen and (max-width: 1000px) {
+  html,
+  body {
+    scroll-behavior: smooth;
+  }
+
+  .content {
+    margin-top: 2em;
+    width: calc(90% - 4.5em);
+    padding: 3em;
+  }
+
+  .page-title h1 {
+    font-size: 300%;
+  }
+
+  .project-title h1 {
+    font-size: 145%;
+  }
+
+  .content h2 i {
+    font-size: 85%;
+  }
+
+  .content h2 {
+    font-size: 100%;
+  }
+
+  a {
+    text-decoration: underline;
+  }
 }
 
 /* FOOTER */
